@@ -7,6 +7,7 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <Label x:Name="label" Content="TEST RAZ DWA TRZY" HorizontalAlignment="Left" Margin="213,151,0,0" VerticalAlignment="Top" Height="146" Width="425" Background="#FFBF3535"/>
+
     </Grid>
 </Window>
