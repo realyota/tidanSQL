@@ -5,8 +5,46 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:tidanSQL"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="551.7" Width="894.8">
+
     <Grid>
-        
+        <Menu VerticalAlignment = "Top" Margin="0,0,10,0">
+
+            <MenuItem Header = "File">
+                <MenuItem x:Name="miNewConnection" Header = "New connection..." HorizontalAlignment = "Left" Width = "160" 
+               Click = "MenuItem_Click" />
+
+                <MenuItem Header = "Item 2" HorizontalAlignment = "Left" Width = "140" 
+               Click = "MenuItem_Click" />
+
+                <Separator HorizontalAlignment = "Left" Width = "140" />
+
+                <MenuItem Header = "Item 3" HorizontalAlignment = "Left" Width = "140" 
+               Click = "MenuItem_Click"/>
+            </MenuItem>
+
+            <MenuItem Header = "Edit">
+                <MenuItem Header = "Item 1" HorizontalAlignment = "Left" Width = "140" 
+               Click = "MenuItem_Click1" />
+                <MenuItem Header = "Item 2" HorizontalAlignment = "Left" Width = "140" 
+               Click = "MenuItem_Click1" />
+                <Separator HorizontalAlignment = "Left" Width = "140" />
+                <MenuItem Header = "Item 3" HorizontalAlignment = "Left" Width = "140" 
+               Click = "MenuItem_Click1" />
+            </MenuItem>
+
+            <MenuItem Header = "View">
+                <MenuItem Header = "Item 1" HorizontalAlignment = "Left" Width = "140" 
+               Click = "MenuItem_Click2" />
+                <MenuItem Header = "Item 2" HorizontalAlignment = "Left" Width = "140" 
+               Click = "MenuItem_Click2" />
+                <Separator HorizontalAlignment = "Left" Width = "140" />
+                <MenuItem Header = "Item 3" HorizontalAlignment = "Left" Width = "140" 
+               Click = "MenuItem_Click2"/>
+            </MenuItem>
+
+        </Menu>
+        <StackPanel x:Name="Stack" HorizontalAlignment="Left" Margin="0,18,0,0.4" Width="63"/>
     </Grid>
+
 </Window>
