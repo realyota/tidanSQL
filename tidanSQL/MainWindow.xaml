@@ -12,35 +12,35 @@
 
             <MenuItem Header = "File">
                 <MenuItem x:Name="miNewConnection" Header = "New connection..." HorizontalAlignment = "Left" Width = "160" 
-               Click = "MenuItem_Click" />
+               Click = "miNewConnection_Click" />
 
                 <MenuItem Header = "Item 2" HorizontalAlignment = "Left" Width = "140" 
-               Click = "MenuItem_Click" />
+               Click = "miNewConnection_Click" />
 
                 <Separator HorizontalAlignment = "Left" Width = "140" />
 
                 <MenuItem Header = "Item 3" HorizontalAlignment = "Left" Width = "140" 
-               Click = "MenuItem_Click"/>
+               Click = "miNewConnection_Click"/>
             </MenuItem>
 
             <MenuItem Header = "Edit">
                 <MenuItem Header = "Item 1" HorizontalAlignment = "Left" Width = "140" 
-               Click = "MenuItem_Click1" />
+               Click = "miNewConnection_Click" />
                 <MenuItem Header = "Item 2" HorizontalAlignment = "Left" Width = "140" 
-               Click = "MenuItem_Click1" />
+               Click = "miNewConnection_Click" />
                 <Separator HorizontalAlignment = "Left" Width = "140" />
                 <MenuItem Header = "Item 3" HorizontalAlignment = "Left" Width = "140" 
-               Click = "MenuItem_Click1" />
+               Click = "miNewConnection_Click" />
             </MenuItem>
 
             <MenuItem Header = "View">
                 <MenuItem Header = "Item 1" HorizontalAlignment = "Left" Width = "140" 
-               Click = "MenuItem_Click2" />
+               Click = "miNewConnection_Click" />
                 <MenuItem Header = "Item 2" HorizontalAlignment = "Left" Width = "140" 
-               Click = "MenuItem_Click2" />
+               Click = "miNewConnection_Click" />
                 <Separator HorizontalAlignment = "Left" Width = "140" />
                 <MenuItem Header = "Item 3" HorizontalAlignment = "Left" Width = "140" 
-               Click = "MenuItem_Click2"/>
+               Click = "miNewConnection_Click"/>
             </MenuItem>
 
         </Menu>

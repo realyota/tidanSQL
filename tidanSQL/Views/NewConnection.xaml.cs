@@ -10,24 +10,23 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace tidanSQL
+namespace tidanSQL.Views
 {
     /// <summary>
-    /// Logika interakcji dla klasy MainWindow.xaml
+    /// Logika interakcji dla klasy Window1.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class Window1 : Window
     {
-        public MainWindow()
+        public Window1()
         {
             InitializeComponent();
         }
 
-        private void miNewConnection_Click(object sender, RoutedEventArgs e)
+        private void Button_Save_Click(object sender, RoutedEventArgs e)
         {
-            // open new connection from
+
         }
     }
 }
