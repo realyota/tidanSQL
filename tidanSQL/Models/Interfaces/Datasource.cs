@@ -5,12 +5,12 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Runtime.Serialization;
 
-namespace tidanSQL.Models.DataSource
+namespace tidanSQL.Models.Datasource
 {
     interface IDatasource
     {
-        String ConName { get; set; }
-        String ConString { get; set; }
+        String conName { get; set; }
+        String conString { get; set; }
     }
 
     // todo: savable interface
@@ -20,9 +20,15 @@ namespace tidanSQL.Models.DataSource
     } */
 
     [Serializable]
-    class CustomDatasource : IDatasource//, ISavable
+    public class CustomDatasource : IDatasource//, ISavable
     {
-        public string ConName { get; set; }
-        public string ConString { get; set; }
+        public CustomDatasource() { }
+        public CustomDatasource(String conName, String conString) {
+            this.conName = conName;
+            this.conName = conString;
+        }
+        
+        public string conName { get; set; }
+        public string conString { get; set; }
     }
 }

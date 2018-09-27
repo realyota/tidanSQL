@@ -15,5 +15,6 @@ namespace tidanSQL.Models.Application
         /// Question: why use => operator instead of = ? in const static definition?
         /// </remarks>
         public static string ConnectionFilename => "connections.xml";
+        public static string AppFolder => "tidanSQL";
     }
 }

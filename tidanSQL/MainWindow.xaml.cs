@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using tidanSQL.Views;
 
 namespace tidanSQL
 {
@@ -28,6 +29,8 @@ namespace tidanSQL
         private void miNewConnection_Click(object sender, RoutedEventArgs e)
         {
             // open new connection from
+            NewConnection nc = new NewConnection();
+            nc.ShowDialog();            
         }
     }
 }

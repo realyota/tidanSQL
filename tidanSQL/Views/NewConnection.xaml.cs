@@ -11,22 +11,35 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using tidanSQL.Models.FileHelper;
+using tidanSQL.Models.Datasource;
 
 namespace tidanSQL.Views
 {
     /// <summary>
     /// Logika interakcji dla klasy Window1.xaml
     /// </summary>
-    public partial class Window1 : Window
+    public partial class NewConnection : Window
     {
-        public Window1()
+        public NewConnection()
         {
             InitializeComponent();
         }
 
         private void Button_Save_Click(object sender, RoutedEventArgs e)
-        {
+        {            
+            SaveDatasource(tbConName.Text, tbConString.Text);
+        }
 
+        public void SaveDatasource(String conName, String conString)
+        {            
+            FileHelper.SaveDatasource(
+                new CustomDatasource
+                (
+                   conName,
+                   conString
+                )
+            );
         }
     }
 }

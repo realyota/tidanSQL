@@ -5,15 +5,15 @@ using System.Text;
 using System.Threading.Tasks;
 using System.IO;
 using tidanSQL.Models.Application;
-using tidanSQL.Models.DataSource; // temp
+using tidanSQL.Models.Datasource; // temp
 
-namespace tidanSQL.Models
+namespace tidanSQL.Models.FileHelper
 {
-    class FileHelper
+    static class FileHelper
     {
-        public String GetAppFolder()
+        public static String GetAppFolder()
         {
-            string path = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
+            string path = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + "\\" + tidanConst.AppFolder;
             try
             {
                 if (!(Directory.Exists(path)))
@@ -24,13 +24,13 @@ namespace tidanSQL.Models
             return path;
         }
 
-        public String GetConnectionFilepath()
+        public static String GetConnectionFilepath()
         {
-            return GetAppFolder() + "/" + tidanConst.ConnectionFilename;
+            return GetAppFolder() + "\\" + tidanConst.ConnectionFilename;
         }
 
         // temp
-        public void SaveDatasource(CustomDatasource datasource) // todo: IDatasource
+        public static void SaveDatasource(CustomDatasource datasource) // todo: IDatasource
         {
             // simple save to xml file
             // todo: stream
@@ -39,6 +39,15 @@ namespace tidanSQL.Models
 
             writer.Serialize(file, datasource);
             file.Close();
+        }
+
+        public static CustomDatasource LoadDatasource()
+        {
+            System.Xml.Serialization.XmlSerializer reader = new System.Xml.Serialization.XmlSerializer(typeof(CustomDatasource));
+            System.IO.FileStream file = System.IO.File.Create(GetConnectionFilepath());
+
+            CustomDatasource res = (CustomDatasource)reader.Deserialize(file);
+            return res;
         }
     }
 }
