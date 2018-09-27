@@ -44,7 +44,7 @@ namespace tidanSQL.Models.FileHelper
         public static CustomDatasource LoadDatasource()
         {
             System.Xml.Serialization.XmlSerializer reader = new System.Xml.Serialization.XmlSerializer(typeof(CustomDatasource));
-            System.IO.FileStream file = System.IO.File.Create(GetConnectionFilepath());
+            System.IO.FileStream file = System.IO.File.OpenRead (GetConnectionFilepath());
 
             CustomDatasource res = (CustomDatasource)reader.Deserialize(file);
             return res;
