@@ -25,7 +25,7 @@ namespace tidanSQL.Models.Datasource
         public CustomDatasource() { }
         public CustomDatasource(String conName, String conString) {
             this.conName = conName;
-            this.conName = conString;
+            this.conString = conString;
         }
         
         public string conName { get; set; }
