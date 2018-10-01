@@ -59,6 +59,9 @@
     <Compile Include="Views\NewConnection.xaml.cs">
       <DependentUpon>NewConnection.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\QueryView.xaml.cs">
+      <DependentUpon>QueryView.xaml</DependentUpon>
+    </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -72,6 +75,10 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="Views\NewConnection.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\QueryView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

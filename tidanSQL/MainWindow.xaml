@@ -14,8 +14,8 @@
                 <MenuItem x:Name="miNewConnection" Header = "New connection..." HorizontalAlignment = "Left" Width = "160" 
                Click = "miNewConnection_Click" />
 
-                <MenuItem Header = "Item 2" HorizontalAlignment = "Left" Width = "140" 
-               Click = "miNewConnection_Click" />
+                <MenuItem x:Name="miQueryTest" Header = "Query test" HorizontalAlignment = "Left" Width = "140" 
+               Click = "miNewQuery_Click" />
 
                 <Separator HorizontalAlignment = "Left" Width = "140" />
 

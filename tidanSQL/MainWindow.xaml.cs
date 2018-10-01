@@ -32,5 +32,12 @@ namespace tidanSQL
             NewConnection nc = new NewConnection();
             nc.ShowDialog();            
         }
+
+        private void miNewQuery_Click(object sender, RoutedEventArgs e)
+        {
+            // open new query form
+            QueryView qv = new QueryView();
+            qv.ShowDialog();
+        }
     }
 }
